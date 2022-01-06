@@ -47,7 +47,8 @@ async function displayTodos() {
 }
 
 window.addEventListener('load', async() => {
-    displayTodos();
+    const todos = await displayTodos();
+    console.log(todos);
 });
 
 logoutButton.addEventListener('click', () => {
